@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const AppReceitas());
+  runApp(const NutriReceitas());
 }
 
-class AppReceitas extends StatelessWidget {
-  const AppReceitas({super.key});
+class NutriReceitas extends StatelessWidget {
+  const NutriReceitas({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'NutriReceitas',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('App de Receitas'),
+          title: const Text('NutriReceitas'),
         ),
         body: const Center(
           child: Text('Projeto em desenvolvimento'),
