@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../models/receitas_mock.dart';
+import '../data/receitas_mock.dart';
 import '../widgets/receita_card.dart';
 
 class ListaReceitasScreen extends StatelessWidget {

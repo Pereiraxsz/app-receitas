@@ -1,4 +1,4 @@
-import 'receita.dart';
+import '../models/receita.dart';;
 
 final List<Receita> receitas = [
   Receita(
