@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'screens/busca_screen.dart';
+import 'screens/favoritos_screen.dart';
 import 'screens/lista_receitas_screen.dart';
+import 'screens/receita_salva_screen.dart';
 
 void main() {
   runApp(const NutriReceitas());
@@ -20,9 +23,13 @@ class NutriReceitas extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const ListaReceitasScreen(
-        categoria: 'Sobremesas',
-      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const ListaReceitasScreen(categoria: 'Sobremesas'),
+        '/busca': (context) => const BuscaScreen(),
+        '/favoritos': (context) => const FavoritosScreen(),
+        '/receita-salva': (context) => const ReceitaSalvaScreen(),
+      },
     );
   }
 }

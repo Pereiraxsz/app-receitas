@@ -102,3 +102,5 @@ final List<Receita> receitas = [
     ],
   ),
 ];
+
+final List<Receita> mockReceitas = receitas;

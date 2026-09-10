@@ -1,4 +1,5 @@
 class Receita {
+  final String id;
   final String nome;
   final String categoria;
   final String imagem;
@@ -10,6 +11,7 @@ class Receita {
   final List<String> modoPreparo;
 
   Receita({
+    String? id,
     required this.nome,
     required this.categoria,
     required this.imagem,
@@ -19,5 +21,5 @@ class Receita {
     this.porcoes = '',
     this.ingredientes = const [],
     this.modoPreparo = const [],
-  });
+  }) : id = id ?? nome.toLowerCase().replaceAll(' ', '_');
 }
