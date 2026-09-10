@@ -1,28 +1,106 @@
-import '../models/receita.dart';;
+import '../models/receita.dart';
 
 final List<Receita> receitas = [
+  Receita(
+    nome: 'Bolo de banana',
+    categoria: 'Sobremesas',
+    imagem: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800',
+    tempoPreparo: 40,
+    dificuldade: 'Média',
+    calorias: '~700 kcal',
+    porcoes: '8 porções',
+    ingredientes: [
+      '2 bananas',
+      '2 ovos',
+      '1 xícara de aveia',
+      '1 colher de mel',
+    ],
+    modoPreparo: [
+      'Amasse as bananas',
+      'Misture tudo',
+      'Leve ao forno por 30 minutos',
+    ],
+  ),
   Receita(
     nome: 'Pizza',
     categoria: 'Massas',
     imagem: 'https://picsum.photos/300/200?1',
     tempoPreparo: 40,
+    dificuldade: 'Média',
+    calorias: '~850 kcal',
+    porcoes: '6 fatias',
+    ingredientes: [
+      'Massa para pizza',
+      'Molho de tomate',
+      'Queijo mussarela',
+      'Orégano e azeitonas',
+    ],
+    modoPreparo: [
+      'Abra a massa na assadeira',
+      'Espalhe o molho e cubra com queijo',
+      'Asse em forno pré-aquecido a 200°C por 20 minutos',
+    ],
   ),
   Receita(
     nome: 'Macarrão',
     categoria: 'Massas',
     imagem: 'https://picsum.photos/300/200?2',
     tempoPreparo: 30,
+    dificuldade: 'Fácil',
+    calorias: '~500 kcal',
+    porcoes: '4 porções',
+    ingredientes: [
+      '500g de macarrão',
+      'Molho de tomate caseiro',
+      'Queijo parmesão ralado',
+      'Sal e azeite a gosto',
+    ],
+    modoPreparo: [
+      'Ferva a água com sal',
+      'Cozinhe o macarrão al dente',
+      'Misture o molho aquecido e finalize com queijo',
+    ],
   ),
   Receita(
     nome: 'Brigadeiro',
     categoria: 'Sobremesas',
     imagem: 'https://picsum.photos/300/200?3',
     tempoPreparo: 20,
+    dificuldade: 'Fácil',
+    calorias: '~350 kcal',
+    porcoes: '15 unidades',
+    ingredientes: [
+      '1 lata de leite condensado',
+      '3 colheres de chocolate em pó',
+      '1 colher de manteiga',
+      'Granulado de chocolate',
+    ],
+    modoPreparo: [
+      'Misture os ingredientes em fogo baixo',
+      'Mexa até desgrudar do fundo da panela',
+      'Espere esfriar, enrole e passe no granulado',
+    ],
   ),
   Receita(
     nome: 'Pudim',
     categoria: 'Sobremesas',
     imagem: 'https://picsum.photos/300/200?4',
     tempoPreparo: 60,
+    dificuldade: 'Média',
+    calorias: '~620 kcal',
+    porcoes: '8 porções',
+    ingredientes: [
+      '1 lata de leite condensado',
+      '1 medida da lata de leite integral',
+      '3 ovos',
+      '1 xícara de açúcar para caramelizar',
+    ],
+    modoPreparo: [
+      'Caramelize a forma com o açúcar',
+      'Bata os outros ingredientes no liquidificador',
+      'Despeje na forma e asse em banho-maria por 50 minutos',
+    ],
   ),
 ];
+
+final List<Receita> mockReceitas = receitas;
