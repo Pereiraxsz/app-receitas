@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/receita.dart';
+import '../screens/detalhes_receita_screen.dart';
 
 class ReceitaCard extends StatelessWidget {
   final Receita receita;
@@ -22,7 +23,18 @@ class ReceitaCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
       ),
       clipBehavior: Clip.antiAlias,
-      child: Column(
+      child: InkWell(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => DetalhesReceitaScreen(
+                receita: receita,
+              ),
+            ),
+          );
+        },
+        child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.network(
@@ -62,6 +74,7 @@ class ReceitaCard extends StatelessWidget {
             ),
           ),
         ],
+        ),
       ),
     );
   }

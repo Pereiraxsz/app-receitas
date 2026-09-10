@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'screens/lista_receitas_screen.dart';
+
 void main() {
   runApp(const NutriReceitas());
 }
@@ -12,13 +14,14 @@ class NutriReceitas extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'NutriReceitas',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('NutriReceitas'),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF275A1B),
         ),
-        body: const Center(
-          child: Text('Projeto em desenvolvimento'),
-        ),
+        useMaterial3: true,
+      ),
+      home: const ListaReceitasScreen(
+        categoria: 'Sobremesas',
       ),
     );
   }
