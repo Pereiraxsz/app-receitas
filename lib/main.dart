@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nutrireceitas/screens/home_screen.dart';
 
 void main() {
   runApp(const NutriReceitas());
@@ -12,14 +13,7 @@ class NutriReceitas extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'NutriReceitas',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('NutriReceitas'),
-        ),
-        body: const Center(
-          child: Text('Projeto em desenvolvimento'),
-        ),
-      ),
+      home: const HomeScreen(),
     );
   }
 }
